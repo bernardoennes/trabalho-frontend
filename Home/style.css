@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: #454445;
 }
 
 .header-banner {
-  background-color: #a00000; /* vermelho escuro da borda */
+  background-color: #ff3030; /* vermelho escuro da borda */
   padding: 10px; /* cria a borda */
 }
 
@@ -67,11 +67,14 @@ nav {
   color: white;
   text-align: center;
   padding: 80px 16px;
+  height: 20rem
 }
 
 .banner h1 {
   font-size: 48px;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -79,6 +82,8 @@ nav {
   font-size: 19px;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -92,7 +97,7 @@ nav {
   text-align: center;
   font-size: 32px;
   margin-bottom: 32px;
-  color: #c00000;
+  color: #ff3030;
   position: relative;
 }
 
@@ -101,7 +106,7 @@ nav {
   display: block;
   width: 100px;
   height: 3px;
-  background-color: #c00000;
+  background-color: #ff3030;
   margin: 8px auto;
 }
 
@@ -183,4 +188,18 @@ nav {
 
 .footer p {
   margin: 8px 0;
+}
+
+.price-table {
+  margin-top: 10px;
+}
+
+.price-table p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.price-table del {
+  color: #888;
+  margin-right: 8px;
 }
