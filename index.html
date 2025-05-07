@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+
+    }
+
+    #div {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        border: 0.7px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #a71f0e;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+
+    }
+    .div{
+       display: flex;
+       flex-direction: column; 
+    }
+</style>
+
+<body>
+    <div id="div">
+        <img src="C:\Users\SERRATEC\Desktop\Nova pasta\exercicio\download.jpg" alt="">
+        <h1>Faça seu login</h1>
+        <form>
+            <div class="div">
+                <label for="emailUser">Email</label>
+                <input type="email" id="emailUser" name="emailUser" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="div">
+                <label for="passwordUser">Senha</label>
+                <input type="password" id="passwordUser" name="passwordUser" placeholder="Digite sua senha" required>
+            </div>
+
+            <button>Entrar</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
