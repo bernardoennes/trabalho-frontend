@@ -5,12 +5,7 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: brown;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
+
 
 main {
     display: flex;
@@ -105,3 +100,52 @@ text-align: top;
     border-radius: 80px;
     transform: translate(-50%, -50%);
 }
+.header-banner {
+    background-color: #a00000; /* vermelho escuro da borda */
+    padding: 10px; /* cria a borda */
+  }
+  
+  .madeira-banner {
+    background-image: url("../images/fundo_madeira.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    width: 100%;
+  }
+  
+  #logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav {
+    margin: 1rem;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .nav-button {
+    background-color: #ff3030;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .nav-button:hover {
+    background-color: #e00000;
+    transform: scale(1.05);
+  }
