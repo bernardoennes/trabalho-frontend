@@ -18,15 +18,15 @@
         <div class="direita">
         <div class="box">
             <h2>Login</h2>
-            <form>
-      
-                <input type="text" id="emailUser" name="emailUser" placeholder="Email" required>
-                <input type="password" id="passwordUser" name="passwordUser" placeholder="Senha" required>
-                <button type="submit">Entrar</button>
+            <form onsubmit="login(event)">
+              <input type="text" id="emailUser" name="emailUser" placeholder="Email" required>
+              <input type="password" id="passwordUser" name="passwordUser" placeholder="Senha" required>
+              <button type="submit">Entrar</button>
+              <div class="message" id="message"></div>
             </form>
         </div>
     </div>
   </div>
-
+  <script src="script.js">defer</script>
 </body>
 </html>
