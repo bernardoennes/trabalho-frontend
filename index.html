@@ -1,66 +1,32 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/logo com fundo.png" type="image/x-icon"> OBS NAO ESQUECER DE POR A IMAGEM QUE VAI PARA O SEU ARQUIVO (COM FUNDO)
+  <link rel="stylesheet" href="./style.css">
+  <title>Login - Pizzaria Serrana</title>
 </head>
-<style>
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        
-
-    }
-
-    #div {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 40px;
-        border: 0.7px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 2px 2px 5px #a71f0e;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-       
-
-    }
-    .div{
-       display: flex;
-       flex-direction: column; 
-    }
-</style>
-
 <body>
-    <div id="div">
-        <img src="C:\Users\SERRATEC\Desktop\Nova pasta\exercicio\download.jpg" alt="">
-        <h1>Faça seu login</h1>
-        <form>
-            <div class="div">
-                <label for="emailUser">Email</label>
-                <input type="email" id="emailUser" name="emailUser" placeholder="Digite seu email" required>
-            </div>
 
-            <div class="div">
-                <label for="passwordUser">Senha</label>
-                <input type="password" id="passwordUser" name="passwordUser" placeholder="Digite sua senha" required>
-            </div>
-
-            <button>Entrar</button>
-        </form>
+    <div class="container">
+        <div class="esquerda">
+        <img src="./images/logo sem fundo.png alt="logo>
+        </div>
+        <div class="direita">
+        <div class="box">
+            <h2>Login</h2>
+            <form>
+      
+                <input type="text" id="emailUser" name="emailUser" placeholder="Email" required>
+                <input type="password" id="passwordUser" name="passwordUser" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
     </div>
-
-
+  </div>
 
 </body>
-
 </html>
