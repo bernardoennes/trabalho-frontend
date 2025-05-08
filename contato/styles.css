@@ -176,6 +176,7 @@ nav {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 #contact-form button {
@@ -186,8 +187,10 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
 }
 
-#contact-form button:hover {
-    background-color: darkred;
+#contact-form:hover {
+    background-color: white;
+    transform: scale(1.05);
 }

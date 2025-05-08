@@ -10,7 +10,7 @@ if (!usuarioSalvo) {
       document.getElementById("email").textContent = data.email;
       document.getElementById("telefone").textContent = data.telefone || "Não informado";
       document.getElementById("endereco").textContent = data.endereco || "Não informado";
-      document.getElementById("createdAt").textContent = new Date(data.createdAt).toLocaleString("pt-BR");
+    
     })
     .catch(err => {
       console.error("Erro ao buscar usuário:", err);
