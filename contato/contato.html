@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
     <title>Contato</title>
-    <link rel="shortcut icon" href="./assets/logo.pnj.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="./assets/logo.pnj.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-banner">
-            <div class="madeira-banner">
-                <img id="logo" src="../images/logo.png" alt="Logotipo" />
-            </div>
+      <div class="header-banner">
+        <div class="madeira-banner">
+          <img id="logo" src="../images/logo com fundo.png" alt="Logotipo" />
         </div>
-        <nav>
-            <button class="nav-button">Cardápio</button>
-            <button class="nav-button">Contato</button>
-        </nav>
+      </div>
+      <nav>
+        <button class="nav-button">Cardápio</button>
+        <button class="nav-button" onclick="window.location.href='../Home/index.html'">Menu</button>
+      </nav>
     </header>
     <main>
-        <main>
-            <!-- Informações de Contato -->
-            <section id="contact-info">
-                <h2>Informações de Contato</h2>
-                <p><strong>Endereço:</strong> Rua das Pizzas, 123 - Centro</p>
-                <p><strong>Telefone:</strong> (21) 1234-5678</p>
-                <p><strong>Email:</strong> contato@pizzaria.com</p>
-            </section>
+      <main>
+        <section id="contact-info">
+          <h2>Informações de Contato</h2>
+          <p><strong>Endereço:</strong> Rua das Pizzas, 123 - Centro</p>
+          <p><strong>Telefone:</strong> (21) 1234-5678</p>
+          <p><strong>Email:</strong> contato@pizzaria.com</p>
+        </section>
 
-            <!-- Formulário de Contato -->
-            <section id="contact-form">
-                <h2>Envie uma Mensagem</h2>
-                <form action="submit_form.php" method="POST">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
+        <section id="contact-form">
+          <h2>Envie uma Mensagem</h2>
+          <form action="submit_form.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
                     <button type="submit">Enviar Mensagem</button>
                 </form>
             </section>
 
-            <!-- Mapa -->
+           
             <section id="map-container">
                 <h2>Localização</h2>
                 <iframe
@@ -59,9 +63,5 @@
             </section>
         </main>
     </main>
-
-
-
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil - Pizzaria Serrana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-banner">
+      <div class="madeira-banner">
+        <img id="logo" src="../images/logo com fundo.png" alt="Logotipo">
+      </div>
+    </div>
+    <nav>
+      <button class="nav-button" onclick="window.location.href='../home/index.html'">Menu</button>
+      <button class="nav-button" onclick="window.location.href='menu.html'">Cardápio</button>
+      <button class="nav-button" onclick="window.location.href='contato.html'">Contato</button>
+      <button class="nav-button" onclick="logout()">Sair</button>
+    </nav>
+  </header>
+
+  <section class="promocoes">
+    <h2 class="section-title">Meu Perfil</h2>
+    <div class="card-container">
+      <div class="promo-card" id="profile-card">
+        <div class="card-content" id="profile-content">
+          <p><strong>Nome:</strong> <span id="nome"></span></p>
+          <p><strong>Email:</strong> <span id="email"></span></p>
+          <p><strong>Telefone:</strong> <span id="telefone"></span></p>
+          <p><strong>Endereço:</strong> <span id="endereco"></span></p>
+          <p><strong>Data de Cadastro:</strong> <span id="createdAt"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Pizzaria Serrana - Todos os direitos reservados</p>
+    <p>Rua das Pizzas, 123 - Centro - (11) 99999-9999</p>
+    <p>Horário de funcionamento: Seg a Dom, das 18h às 23h</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

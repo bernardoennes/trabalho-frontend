@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/logo com fundo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <title>Login - Pizzaria Serrana</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="esquerda">
+        <img src="../images/logo sem fundo.png"logo>
+        </div>
+        <div class="direita">
+        <div class="box">
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+              <input type="text" id="emailUser" name="emailUser" placeholder="Email" required>
+              <input type="password" id="passwordUser" name="passwordUser" placeholder="Senha" required>
+              <button type="submit">Entrar</button>
+              <a href="">Cadastre-se</a>
+              <div class="message" id="message"></div>
+            </form>
+        </div>
+    </div>
+  </div>
+  <script src="script.js">defer</script>
+</body>
+</html>
