@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 32px;
+  background-size: cover;
+  justify-content: center;
+}
+  .esquerda{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+  .container{
+      display: flex;
+      height: 100vh;
+}
+  .box{
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+}   
+  .box label{
+      display: block;
+      margin: 18px 5 5px;
+}
+  .box input{
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+}
+  .direita{
+      background-color: #b1322b;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+  .login-container {          
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(68, 41, 41, 0.3);
+      text-align: center;
+}
+
+  h2{
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  img{
+      height: 70%;
+  }
+
+      input[type="text"],
+      input[type="password"] {
+          width: 100%;
+          padding: 12px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+
+      button {
+          padding: 12px 20px;
+          background-color: #d62828;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          width: auto;
+          display: block;
+          margin: 0 auto;
+      }
+
+      button:hover {
+          background-color: #052405;
+      } 
