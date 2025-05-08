@@ -10,8 +10,8 @@ body {
 }
 
 .header-banner {
-  background-color: #ff3030; /* vermelho escuro da borda */
-  padding: 10px; /* cria a borda */
+  background-color: #ff3030; 
+  padding: 10px; 
 }
 
 .madeira-banner {
@@ -56,7 +56,7 @@ nav {
 
 .nav-button:hover {
   background-color: #e00000;
-  transform: scale(1.05); /* leve zoom no hover */
+  transform: scale(1.05); 
 }
 
 .banner {
