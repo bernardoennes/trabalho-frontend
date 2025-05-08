@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    background-color: #f5f0e8;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .left img {
+    max-width: 300px;
+    height: auto;
+} */
+img{
+    height: 70%;
+}
+
+.right {
+    background-color: #b1322b;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* parte do titulo na caixa, no caso o Faça seu cadastro */
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.form-box label {
+    display: block;
+    margin: 18px 5 5px;
+}
+
+/* a forma da caixa do cadastro */
+.form-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+/* Botão de cadastro */
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b1322b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* mudança de cor quando você passa por cima do botao de confirmar */
+.form-box button:hover {
+    /* background-color: #921f1f; */
+    background-color: rgb(5, 36, 5);
+}
