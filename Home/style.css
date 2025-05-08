@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+}
+
+body {
+  background-color: #454445;
+}
+
+.header-banner {
+  background-color: #ff3030; /* vermelho escuro da borda */
+  padding: 10px; /* cria a borda */
+}
+
+.madeira-banner {
+  background-image: url("../images/fundo_madeira.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  margin: 1rem;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.nav-button {
+  background-color: #ff3030;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:hover {
+  background-color: #e00000;
+  transform: scale(1.05); /* leve zoom no hover */
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/api/placeholder/1200/400");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 16px;
+  height: 20rem
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+  font-size: 19px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.promocoes {
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: #ff3030;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #ff3030;
+  margin: 8px auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.promo-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-desc {
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 16px;
+}
+
+.promo-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c00000;
+}
+
+.promo-badge {
+  background-color: #c00000;
+  color: white;
+  font-weight: bold;
+  padding: 5px 13px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+.price-table {
+  margin-top: 10px;
+}
+
+.price-table p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.price-table del {
+  color: #888;
+  margin-right: 8px;
+}
+
+.banner-carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.banner-text p {
+  font-size: 20px;
+}
