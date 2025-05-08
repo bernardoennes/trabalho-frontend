@@ -22,10 +22,6 @@ body {
     justify-content: center;
 }
 
-/* .left img {
-    max-width: 300px;
-    height: auto;
-} */
 img{
     height: 70%;
 }
@@ -80,5 +76,5 @@ img{
 /* mudança de cor quando você passa por cima do botao de confirmar */
 .form-box button:hover {
     /* background-color: #921f1f; */
-    background-color: rgb(5, 36, 5);
+    background-color: #052405;
 }
