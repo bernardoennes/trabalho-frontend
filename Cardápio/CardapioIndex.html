@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html5 lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio</title>
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap que será usado nos tamanhos e nas caixas com os sabores -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+  
+  <header>
+    <div class="header-banner">
+      <div class="madeira-banner">
+        <img id="logo" src="../images/logo.png" alt="Logotipo" />
+      </div>
+    </div> 
+    <nav>
+      <button class="nav-button">Menu</button>
+      <button class="nav-button">Contato</button>
+      <button class="nav-button">🛒 Ver carrinho</button>
+    </nav>     
+  </header>
+
+  <section id="MeioDeTela">
+    <div class="container">
+      <h1>Conheça nosso cardápio e se surpreenda com cada detalhe!</h1>
+    </div>
+  </section> 
+
+  <main class="container py-5">
+    <!-- Tamanhos e Preços das pizzas -->
+    <div class="row text-center mb-5">
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>PIZZA<br>MÉDIA</h5>
+          <p>(25 CM)</p>
+          <div class="separator"></div>
+          <p class="price">R$ 37,90</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>PIZZA<br>GIGANTE</h5>
+          <p>(35 CM)</p>
+          <div class="separator"></div>
+          <p class="price">R$ 57,90</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>PIZZA<br>SUPER GIGA</h5>
+          <p>(40 CM)</p>
+          <div class="separator"></div>
+          <p class="price">R$ 67,90</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card extra-card p-3">
+          <h3>ADICIONE<br>BORDA</h3>
+          <div class="separator"></div>
+          <p>MÉDIA <span class="extra-price">R$ 6,90</span></p>
+          <p>GIGA <span class="extra-price">R$ 8,90</span></p>
+          <p>SUPER <span class="extra-price">R$ 9,90</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sabores, imagens e botão "Quero esta" -->
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/Margherita-Pizza.webp" alt="Pizza Margherita">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate e manjericão.">MARGHERITA</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/PizzaPepperoni.jpg" alt="Pizza Peperoni">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate, orégano e peperoni.">PEPERONI</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/Pizza-de-Quatro-Queijos.jpg" alt="Pizza Quatro Queijos">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate, orégano parmesão, gorgonzola e provolone.">QUATRO QUEIJOS</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4"> 
+        <div class="pizza-img-card p-3">
+          <img src="../images/PizzaCarneSeca.jpeg" alt="Pizza Carne Seca">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate, orégano e carne seca desfiada .">CARNE SECA</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/pizza-de-frango.png" alt="Pizza Frango c/Catupiry">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate, frango desfiado, orégano e catupiry.">FRANGO COM CATUPIRY</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/Pizza-a-portuguesa.jpg" alt="Pizza a portuguesa">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate, ovos cozidos, milho, presunto, orégano e azeitona.">A PORTUGUESA</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/pizza-boscaiola.jpg" alt="Pizza Boscaiola">
+          <h4>PIZZA <abbr title="Boscaiola, com cogumelos e linguiça.">BOSCAIOLA</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/Pizza-Capricciosa.jpeg" alt="Pizza Capricciosa">
+          <h4>PIZZA <abbr title="Capricciosa, com alcachofra, funghi, azeitonas pretas e presunto cru.">CAPRICCIOSA</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pizza-img-card p-3">
+          <img src="../images/Pizza-de-camarao-e-cogumelos.jpg" alt="Pizza Camarão">
+          <h4>PIZZA <abbr title="Muçarela, molho rústico de tomate, cogumelos fatiados, azeitonas pretas fatiadas, manjericão e camarão sete barbas.">CAMARÃO</abbr></h4>
+          <div class="separator"></div>
+          <button class="nav-button">Quero esta</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html5
