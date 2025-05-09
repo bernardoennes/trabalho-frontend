@@ -46,10 +46,10 @@ const carrinho = [];
         li.textContent = `${
           item.nome
         } - ${item.tamanho.toUpperCase()} - R$ ${item.preco.toFixed(2)}`;
-        lista.appendChild(li);
+        lista.adicionarPizza(li);
       });
 
-      carrinhoDiv.appendChild(lista);
+      carrinhoDiv.adicionarPizza(lista);
     }
 
     document.addEventListener("DOMContentLoaded", () => {
