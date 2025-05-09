@@ -19,7 +19,7 @@ async function login(event) {
   
       if (userFound) {
         localStorage.setItem("user", JSON.stringify(userFound));
-        window.location.href = "../Home/index.html";
+        window.location.href = "../index.html";
       } else {
         message.textContent = "Email ou senha incorretos.";
         message.style.color = "red";
