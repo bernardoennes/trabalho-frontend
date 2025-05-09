@@ -5,6 +5,6 @@
 - [Bernardo Rocha Branco Ennes,](https://www.linkedin.com/in/bernardo-ennes-7ab160343/)
 - [Carlos Leonardo Carvalho Otoline,](https://www.linkedin.com/in/carlos-leonardo-carvalho-otoline-694534278/)
 - [Karen Lessa da Silva Menezes,](https://www.linkedin.com/in/karen-menezes-77a185341/)
-- [Karen dos Santos,](https://www.linkedin.com/in/maria-arag%C3%A3o-b136822b2)
+- [Karen dos Santos,](https://www.linkedin.com/in/karen-santos-34899b183/)
 - [Victor da Silva Campos](https://www.linkedin.com/in/victor-campos-89030820a/)
 
