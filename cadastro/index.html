@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/logo com fundo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <title>Campo de Cadastro</title>
+    <title>Cadastro - Pizzaria Serrana</title>
 </head>
 <body>
     
     <div class="container">
         <div class="left">
-    <!-- <div id="div"> -->
-        <img src="../images/logo sem fundo.png" alt="logo da pizzaria serrana">
+            <img src="../images/logo sem fundo.png" alt="logo da pizzaria serrana">
         </div>
         <div class="right">
             <div class="form-box">
                 <h2>Faça seu cadastro</h2>
                 <form onsubmit="cadastrar(event)">
             
-                    <label for="nomeCadastro">Nome Completo</label>
+                    <label for="nomeUser">Nome Completo</label>
                     <input type="text" id="nomeUser" name="nomeUser" placeholder="Digite seu nome completo" required>
 
             
-                    <label for="telefoneUser">Numero de telefone</label>
+                    <label for="telefoneUser">Número de telefone</label>
                     <input type="tel" id="telefoneUser" name="telefoneUser" placeholder="(xx) xxxxx-xxxx" required>
 
             
@@ -39,12 +38,12 @@
                     <label for="passwordUser">Senha</label>
                     <input type="password" id="passwordUser" name="passwordUser" placeholder="Digite sua senha" required>
 
-                    <button>Confirmar Cadastro</button>
-                    <a href="../login/index.html">Ja tem conta? Faça o Login</a>
+                    <button type="submit">Confirmar Cadastro</button>
+                    <a href="../login/index.html">Já tem conta? Faça o Login</a>
                 </form>
             </div>
         </div>
     </div>
-    <script src="script.js">defer</script>
+    <script src="script.js"></script>
 </body>
 </html>

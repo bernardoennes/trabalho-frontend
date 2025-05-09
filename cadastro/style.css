@@ -1,77 +1,89 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: 'Bonheur Royale', cursive;
-    font-size: 32px;
+  margin: 0;
+  font-family: "Bonheur Royale", cursive;
+  font-size: 32px;
+  min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .left {
-    background-color: #f5f0e8;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #f5f0e8;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-img{
-    height: 70%;
+img {
+  max-height: 70%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .right {
-    background-color: #b1322b;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #b1322b;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .form-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    width: 100%;
-    max-width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
 }
 
 /* parte do titulo na caixa, no caso o Faça seu cadastro */
 .form-box h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-
 .form-box label {
-    display: block;
-    font-size: 28px;
-    margin: 18px 5 5px;
+  display: block;
+  font-size: 28px;
+  margin: 18px 0 5px;
 }
 
 /* a forma da caixa do cadastro */
 .form-box input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 /* Botão de cadastro */
 .form-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #b1322b;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  background-color: #b1322b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /* mudança de cor quando você passa por cima do botao de confirmar */
@@ -88,4 +100,58 @@ a {
   color: black;
   font-size: 14px;
   margin-top: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries para responsividade */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    height: 30vh;
+    min-height: 200px;
+  }
+
+  .right {
+    height: 70vh;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+
+  .form-box label {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 28px;
+  }
+
+  .form-box {
+    padding: 15px;
+  }
+
+  .form-box label {
+    font-size: 20px;
+    margin: 10px 0 5px;
+  }
+
+  .form-box input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .form-box button {
+    padding: 10px;
+    font-size: 16px;
+  }
 }
