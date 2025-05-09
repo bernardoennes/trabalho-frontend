@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../images/logo com fundo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/logo com fundo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Cadastro - Pizzaria Serrana</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
-        <div class="left">
-            <img src="../images/logo sem fundo.png" alt="logo da pizzaria serrana">
+      <div class="left">
+        <img
+          src="../images/logo sem fundo.png"
+          alt="logo da pizzaria serrana"
+        />
+      </div>
+      <div class="right">
+        <div class="form-box">
+          <h2>Faça seu cadastro</h2>
+          <form onsubmit="cadastrar(event)">
+            <label for="nomeUser">Nome Completo</label>
+            <input
+              type="text"
+              id="nomeUser"
+              name="nomeUser"
+              placeholder="Digite seu nome completo"
+              required
+            />
+
+            <label for="telefoneUser">Número de telefone</label>
+            <input
+              type="tel"
+              id="telefoneUser"
+              name="telefoneUser"
+              placeholder="(xx) xxxxx-xxxx"
+              required
+            />
+
+            <label for="enderecoUser">Endereço</label>
+            <input
+              type="text"
+              id="enderecoUser"
+              name="enderecoUser"
+              placeholder="Informe seu endereço"
+              required
+            />
+
+            <label for="emailUser">Email</label>
+            <input
+              type="email"
+              id="emailUser"
+              name="emailUser"
+              placeholder="Informe seu email"
+              required
+            />
+
+            <label for="passwordUser">Senha</label>
+            <input
+              type="password"
+              id="passwordUser"
+              name="passwordUser"
+              placeholder="Digite sua senha"
+              required
+            />
+
+            <button type="submit">Confirmar Cadastro</button>
+            <a href="../login/index.html">Já tem conta? Faça o Login</a>
+          </form>
         </div>
-        <div class="right">
-            <div class="form-box">
-                <h2>Faça seu cadastro</h2>
-                <form onsubmit="cadastrar(event)">
-            
-                    <label for="nomeUser">Nome Completo</label>
-                    <input type="text" id="nomeUser" name="nomeUser" placeholder="Digite seu nome completo" required>
-
-            
-                    <label for="telefoneUser">Número de telefone</label>
-                    <input type="tel" id="telefoneUser" name="telefoneUser" placeholder="(xx) xxxxx-xxxx" required>
-
-            
-                    <label for="enderecoUser">Endereço</label>
-                    <input type="text" id="enderecoUser" name="enderecoUser" placeholder="Informe seu endereço" required>
-
-            
-                    <label for="emailUser">Email</label>
-                    <input type="email" id="emailUser" name="emailUser" placeholder="Informe seu email" required>
-
-            
-                    <label for="passwordUser">Senha</label>
-                    <input type="password" id="passwordUser" name="passwordUser" placeholder="Digite sua senha" required>
-
-                    <button type="submit">Confirmar Cadastro</button>
-                    <a href="../login/index.html">Já tem conta? Faça o Login</a>
-                </form>
-            </div>
-        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+    <!--Implementação de Libras (Recomendação do Monitor)-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
 </html>

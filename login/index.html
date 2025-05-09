@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="../images/logo com fundo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
-  <title>Login - Pizzaria Serrana</title>
-</head>
-<body>
-  <div class="container">
-    <div class="esquerda">
-      <img src="../images/logo sem fundo.png" alt="logo da pizzaria serrana">
-    </div>
-    <div class="direita">
-      <div class="box">
-        <h2>Login</h2>
-        <form onsubmit="login(event)">
-          <input type="text" id="emailUser" name="emailUser" placeholder="Email" required>
-          <input type="password" id="passwordUser" name="passwordUser" placeholder="Senha" required>
-          <button type="submit">Entrar</button>
-          <a href="../cadastro/index.html">Cadastre-se</a>
-          <div class="message" id="message"></div>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/logo com fundo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login - Pizzaria Serrana</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="esquerda">
+        <img
+          src="../images/logo sem fundo.png"
+          alt="logo da pizzaria serrana"
+        />
+      </div>
+      <div class="direita">
+        <div class="box">
+          <h2>Login</h2>
+          <form onsubmit="login(event)">
+            <input
+              type="text"
+              id="emailUser"
+              name="emailUser"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              id="passwordUser"
+              name="passwordUser"
+              placeholder="Senha"
+              required
+            />
+            <button type="submit">Entrar</button>
+            <a href="../cadastro/index.html">Cadastre-se</a>
+            <div class="message" id="message"></div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+
+    <!--Implementação de Libras (Recomendação do Monitor)-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script src="script.js"></script>
+  </body>
 </html>

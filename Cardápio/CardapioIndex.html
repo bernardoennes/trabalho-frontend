@@ -43,7 +43,7 @@
         </button>
         <button class="nav-button" onclick="abrir()">🛒 Ver carrinho</button>
       </nav>
-      
+
       <!-- Tamanhos e Preços das pizzas -->
       <div class="container">
         <div class="row text-center mb-5">
@@ -303,6 +303,17 @@
         </div>
       </div>
     </main>
+    <!--Implementação de Libras (Recomendação do Monitor)-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
   <script src="cardapio.js"></script>
 </html5>

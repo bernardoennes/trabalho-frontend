@@ -8,7 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/logo com fundo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="images/logo com fundo.png"
+      type="image/x-icon"
+    />
     <title>Pizzaria Serrana</title>
   </head>
   <body>
@@ -19,9 +23,21 @@
         </div>
       </div>
       <nav>
-        <button class="nav-button" onclick="window.location.href='Cardápio/CardapioIndex.html'">🍕 Cardápio</button>
-        <button class="nav-button" onclick="window.location.href='contato/contato.html'">🔎 Contatos</button>
-        <button class="nav-button" onclick="acessarPerfil()">🙋‍♂️ Meu Perfil</button>
+        <button
+          class="nav-button"
+          onclick="window.location.href='Cardápio/CardapioIndex.html'"
+        >
+          🍕 Cardápio
+        </button>
+        <button
+          class="nav-button"
+          onclick="window.location.href='contato/contato.html'"
+        >
+          🔎 Contatos
+        </button>
+        <button class="nav-button" onclick="acessarPerfil()">
+          🙋‍♂️ Meu Perfil
+        </button>
       </nav>
     </header>
 
@@ -183,6 +199,16 @@
       <p>Rua das Pizzas, 123 - Centro - (11) 99999-9999</p>
       <p>Horário de funcionamento: Seg a Dom, das 18h às 23h</p>
     </footer>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
     <script src="Home/home.js"></script>
   </body>
 </html>
